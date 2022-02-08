@@ -1,0 +1,463 @@
+@import url('https://fonts.googleapis.com/css2?family=Jua&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    color: inherit;
+    text-decoration: none;
+}
+
+img{
+    vertical-align: top;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+section{
+    height: 100vh;
+}
+
+
+header{
+    height: 80px;
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    background-color: #fff;
+    z-index: 100;
+}
+
+.hWrap{
+    width: 1820px;
+    height: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+
+}
+
+h1{
+    margin-left: 50px;
+    padding-top: 5px;
+}
+
+
+.gnb{
+    font-size: 0;
+    position: absolute;
+    top: 30px;
+    right: 50px;
+}
+
+.gnb li{
+    display: inline-block;
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+    margin: 0 40px;
+}
+
+/* .gnb li :hover{
+    border-bottom: 2px solid #1c49da;
+} */
+
+/* ------------------mainBn-------------------------- */
+
+.mainBn{
+    background-image: url(../images/mainbn2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.mainBn a{
+    display: block;
+    height: 100%;
+}
+
+/* ------------------row1-------------------------- */
+
+.row1{
+    background-image: url(../images/row1backs.png);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: -200px;
+}
+
+.row1 .con{
+    width: 100%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.row1 .txtBox{
+    width: 400px;
+    height: 400px;
+    margin-left: 20px;
+
+}
+
+.row1 .txtBox h4{
+    font-size: 26px;
+    color: #09629e;
+    padding-top: 80px;
+    margin-bottom: 20px;
+}
+
+.row1 .txtBox p{
+    font-size: 14px;
+    color: #363636;
+}
+
+/* ------------------row2-------------------------- */
+
+.row2{
+    background-image: url(../images/row2backs.png);
+    
+}
+
+.row2 .tit{
+    color: #f6f6f6;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding-top: 130px;
+    margin-bottom: 130px;
+}
+
+.row2 .tit h3{
+    font-size: 30px;
+}
+
+.row2 .tit .blue{
+    color: #1c49da;
+}
+
+.row2 .tit p{
+    font-size: 20px;
+}
+
+
+.row2 .sojuWrap{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.row2 .sojuBox img{
+    cursor: pointer;
+    position: relative;
+    z-index: 22;
+}
+
+.sojuBox{
+    position:relative;
+}
+
+.sojuBox .txt{
+    width: 200px;
+    height: 200px;
+    background-color: #09629e;
+    position: absolute;
+    left:80%;
+    top:20%;
+    border-radius: 50%;
+    text-align: center;
+    color: #f6f6f6;
+    display: none;
+}
+
+.sojuBox .txt h4{
+    padding-top: 70px;
+    font-size: 20px;
+}
+
+.sojuBox .txt p{
+    font-size: 14px;
+}
+
+/* ------------------row3-------------------------- */
+
+.row3 h3{
+    font-size: 30px;
+    text-align: center;
+    color: #1c49da;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    padding-top: 70px;
+}
+
+.row3 .newsWrap{
+    width: 1520px;
+    height: 700px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.row3 .box{
+    width: calc(25% - 40px);
+    height: 500px;
+    text-align: center;
+    box-sizing: border-box;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    padding: 10px;
+    transition: all 1s;
+    cursor: pointer;
+}
+
+.row3 .box:last-child{
+    margin-right: 0;
+}
+
+.row3 .box:hover{
+    transform: translate(-5px, -5px);
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+.row3 .box .txt p{
+    text-align: center;
+    padding-top: 45px;
+    font-size: 14px;
+    color: #333;
+}
+
+
+.row3 .box .image img{
+    width: 100%;
+}
+
+.imgView{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 200;
+    display: none;
+
+}
+
+.imgView i{
+    position: absolute;
+    right: 40px;
+    top: 20px;
+    color: #fff;
+    font-size: 20px;
+    text-decoration: underline;
+}
+
+.imgShow{
+    width: 600px;
+    height: 700px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 200;
+    
+}
+
+.imgShow img{
+    width: 100%;
+    height: 80%;
+}
+
+.imgView .txtBox{
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 200px;
+    text-align: center;
+    font-size: 24px;
+    color: #fff;
+}
+
+.closeWrap{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+
+/* ------------------row4-------------------------- */
+
+.row4{
+    background-color: #067eb2;
+    color: #f6f6f6;
+}
+
+.row4 .tit{
+    text-align: center;
+    padding-top: 50px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.row4 h3{
+    font-size: 30px;
+}
+
+.row4 p{
+    font-size: 20px;
+}
+
+.row4 .con{
+    width: 100%;
+    height: 800px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+
+.row4 .box:nth-child(1){
+    transform: rotate(-15deg);
+    position: absolute;
+    left: 50px;
+    top: 100px;
+    
+}
+
+.row4 .box:nth-child(2){
+    transform: rotate(15deg);
+    z-index: 5;
+    position: absolute;
+    left: 500px;
+    bottom: 20px;
+}
+
+.row4 .box:nth-child(3){
+    transform: rotate(5deg);
+    position: absolute;
+    right: 350px;
+    bottom: 100px;
+}
+
+.row4 .box:nth-child(4){
+    transform: rotate(-15deg);
+    position: absolute;
+    right: 50px;
+    top: 10px;
+}
+
+
+/* ------------------footer-------------------------- */
+footer{
+    height: 80px;
+    position: relative;
+}
+
+.fWrap{
+    width: 100%;
+    height: 100%;
+    padding: 10px 0;
+}
+
+.fWrap .con{
+    position: absolute;
+    left: 150px;
+    top: 10px;
+}
+
+.fmenu:after{
+    content: '';
+    clear: both;
+    display: block;
+}
+
+.fmenu li{
+    float: left;
+    font-size: 14px;
+    color: #333;
+}
+
+.fmenu li:after{
+    content: '|';
+    margin: 0 4px;
+}
+
+.fmenu li:last-child:after{
+    content: none;
+}
+
+.sns{
+    position: absolute;
+    right: 150px;
+    top: 30px;
+}
+
+.sns li{
+    float: left;
+    margin-left: 40px;
+}
+
+address{
+    font-style: normal;
+    font-size: 12px;
+    margin: 6px 0;
+    color: #666;
+}
+
+.copyright{
+    font-size: 12px;
+    color: #666;
+}
+
+
+/* animation */
+
+
+/* .soju1.active{
+    animation-name: soju1;
+} */
+
+.soju1{
+    transition: all 0.6s;
+}
+.sojuBox1:hover img{
+    transform:translate(-40px, -40px) rotate(-15deg);
+
+}
+
+
+.sojuBox2:hover img {
+    animation: shakeX ; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 1s; /* don't forget to set a duration! */
+  }
+
+.sojuBox3:hover img{
+    animation: bounceInDown; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 1s; /* don't forget to set a duration! */
+  }
+
+  .sojuBox4:hover img{
+    animation: heartBeat; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 1s; /* don't forget to set a duration! */
+  }
+
+  .sojuBox5:hover img{
+    animation: fadeInTopRight; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 1s; /* don't forget to set a duration! */
+  }
